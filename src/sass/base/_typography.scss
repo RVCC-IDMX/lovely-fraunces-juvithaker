@@ -1,17 +1,48 @@
 /* typography */
 
-@font-face
-{
+h1{
+
+    font-size: 2.9rem;
+    font-style: normal;
+    letter-spacing: -0.051em;
+    line-height: 0.6;
+    font-variation-settings: "opsz" 62, "SOFT" 58.7, "WONK" 1;
+    font-weight: 782;
+      color: #004040;
+}
+
+@font-face {
+    font-size: 117%;
+    line-height: 1.1;
+    letter-spacing: 0.009em;
+    font-variation-settings: "SOFT" 100, "opsz" 92, "WONK" 0.51;
     font-family: 'Fraunces';
     font-style: normal;
     font-weight: 100;
-    src: url('/fonts/Fraunces[SOFT,WONK,opsz,wght].ttf') format('truetype');   
+    max-width: 55ch;
+    margin-bottom: 1rem;
+    padding: 0rem 5vw;
+    src: url('/fonts/Fraunces[SOFT,WONK,opsz,wght].ttf') format('truetype');
 }
-
-@font-face
-{
+@font-face {
+    font-variation-settings: "opsz" 9, "SOFT" 39.6, "WONK" 1;
+    font-weight: 242;
+    line-height: 1.4;
+    font-size: 131%;
+    letter-spacing: 0.087em;
+    font-style: normal;
     font-family: 'Fraunces';
     font-style: italic;
     font-weight: 100;
-    src: url('/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf') format('truetype');   
+    src: url('/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf') format('truetype');
 }
+$font: "Fraunces", serif;
+// body font styling vars
+$body-font-size: 120%;
+$body-font-weight: 350;
+$body-italic-weight: 100;
+// display font styling vars
+$display-font: $font;
+$display-weight: 900;
+$display-spacing: 0.15em;
+$display-title-size: 4rem;
